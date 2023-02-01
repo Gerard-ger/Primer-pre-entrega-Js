@@ -5,26 +5,26 @@ function calcular_prestamo( monto , cuotas ){
  
     let prestamo = 0;
  
-    if( monto > 0 && cuotas == 3){
-         prestamo = monto + (monto * 0.20);
-         return prestamo
+    if( monto > 0 && cuotas == 1){
+        return monto 
+    }
+    else if( monto > 0  && cuotas == 3){
+        prestamo = monto + (monto * 0.20);
+        return prestamo
     }
     else if( monto > 0  && cuotas == 6){
-         prestamo = monto + (monto * 0.40);
-         return prestamo
-    }
-    else if( monto > 0  && cuotas == 12){
-     prestamo = monto + (monto * 0.80);
-     return prestamo 
+        prestamo = monto + (monto * 0.40);
+        return prestamo
      }
-     else if( monto > 0  && cuotas == 1){       
-         return monto
+     else if( monto > 0  && cuotas == 12 ){       
+        prestamo = monto + (monto * 0.80);
+        return prestamo 
+    
     }
  
  }
  
- 
- 
+
  
  function es_socio( prestamo , estado_usuario){
  
